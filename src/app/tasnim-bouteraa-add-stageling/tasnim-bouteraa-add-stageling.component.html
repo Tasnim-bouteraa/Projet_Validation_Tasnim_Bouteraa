@@ -1,0 +1,21 @@
+<form [formGroup]="stageForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label> Titre</label>
+      <input type="text" formControlName="titre">
+      <span *ngIf="stageForm.get('titre')?.touched && stageForm.get('titre')?.invalid">Champ obligatoire</span>
+    </div>
+    <div>
+      <label> Description</label>
+      <input type="text" formControlName="description">
+      <span *ngIf="stageForm.get('description')?.touched && stageForm.get('description')?.errors?.['required']">Champ obligatoire</span>
+      <span *ngIf="stageForm.get('description')?.touched && stageForm.get('description')?.errors?.['minlength']">Minimum 3 caractères</span>
+    </div>
+    <div>
+      <label> Entreprise</label>
+      <input type="text" formControlName="entreprise">
+      <span *ngIf="stageForm.get('entreprise')?.touched && stageForm.get('entreprise')?.errors?.['required']">Champ obligatoire</span>
+      <span *ngIf="stageForm.get('entreprise')?.touched && stageForm.get('entreprise')?.errors?.['firstUpperCase']">Doit commencer par une majuscule</span>
+    </div>
+    <button type="submit" [disabled]="stageForm.invalid"> Ajouter</button>
+</form>
+  

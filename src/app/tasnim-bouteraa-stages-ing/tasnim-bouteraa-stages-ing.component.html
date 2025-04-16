@@ -1,0 +1,7 @@
+<div *ngFor="let stage of stages">
+    <span>Détails</span>
+    <a [routerLink]="['/stage', stage.id]">Détails</a>
+    <span>{{ stage.titre }} - {{ stage.entreprise }}</span>
+    <button (click)="deleteStage(stage.id!)">Supprimer</button>
+</div>
+  

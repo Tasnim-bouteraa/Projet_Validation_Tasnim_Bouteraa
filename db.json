@@ -1,0 +1,28 @@
+{
+  "stages": [
+    {
+      "id": "1",
+      "titre": "TasnimBouteraa S1",
+      "description": "TasnimBouteraa S1",
+      "entreprise": "TasnimBouteraa S1",
+      "disponible": true,
+      "nbrInteresse": 0
+    },
+    {
+      "id": "2",
+      "titre": "TasnimBouteraa S2",
+      "description": "TasnimBouteraa S2",
+      "entreprise": "TasnimBouteraa S2",
+      "disponible": true,
+      "nbrInteresse": 0
+    },
+    {
+      "id": "3",
+      "titre": "TasnimBouteraa S3",
+      "description": "TasnimBouteraa S3",
+      "entreprise": "TasnimBouteraa S3",
+      "disponible": true,
+      "nbrInteresse": 0
+    }
+  ]
+}
